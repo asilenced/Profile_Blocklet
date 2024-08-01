@@ -36,7 +36,7 @@ app.put('/api/update/users/:id', async (req, res) => {
     name: req.body.name,
     email: req.body.email,
     phone: req.body.phone,
-    title: req.body.title,
+    jobTitle: req.body.jobTitle,
     bio: req.body.bio
   };
 
@@ -51,7 +51,9 @@ app.put('/api/update/users/:id', async (req, res) => {
       throw new Error('Email must be a valid email address');
     }
 
-    if (typeof muser.phone !== 'string' || !/^\d+$/.test(muser.phone)) {
+    const phoneRegex = /^[+\d\s]+$/;
+
+    if (typeof muser.phone !== 'string' || !phoneRegex.test(muser.phone)) {
       throw new Error('Phone must be a string containing only digits (0-9)');
     }
     await db.put(userId, JSON.stringify(data));

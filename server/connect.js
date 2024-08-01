@@ -8,7 +8,7 @@ const db = new Level(dbPath, {
 const userKey = 'user_1';
 const initialUserData = {
   name: 'John Doe',
-  title: 'Software Developer',
+  jobTitle: 'Software Developer',
   email: 'XXXXX@gmail.com',
   phone: '13012344321',
   bio: 'Hello, Nice to meet you'

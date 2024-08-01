@@ -17,11 +17,6 @@ function PersonalInfo({ user, setEditForm, setOpen }) {
     return (
         <Grid item xs={12} md={4}>
           <StyledPaper>
-            <Avatar
-              alt={user.name}
-              src={user.profilePicture}
-              sx={{ width: 120, height: 120, margin: 'auto' }}
-            />
             <Typography variant="h5" gutterBottom>
               {user.name}
             </Typography>

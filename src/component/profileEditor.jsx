@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from '@mui/material';
 // import { validateField } from '../utils/validator';
 
-function ProfileEditor({ open, setOpen, setUser, setEditForm, editForm }) {
+function ProfileEditor({ open, setOpen, onSave, setEditForm, editForm }) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const phoneRegex = /^[+\d\s]+$/;
     const [errors, setErrors] = useState({ name: '', jobTitle: '', email: '', phone: '', bio: '' });
@@ -85,7 +85,7 @@ function ProfileEditor({ open, setOpen, setUser, setEditForm, editForm }) {
     const handleSave = () => {
     //   validateField(editForm);
       if (validateForm()) {
-        setUser(editForm);
+        onSave(editForm);
         setOpen(false);
       } else {
         alert('Please fill out all fields correctly.');
