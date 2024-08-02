@@ -10,20 +10,12 @@ This blocklet is a static project, which means this is a frontend application. I
   - favicon.ico - favicon
   - favicon.svg - favicon
   - index.html - main html file, template for react
-- screenshots/ - Screenshots
 - server
   - db
-    - database.sqlite - SQLite database file
+    - mydb - levelDB database file
   - connect.js - Database connection setup
   - route.js - Routing logic
 - src/ - Client side code (A standard react app structure)
-  - component - reusable components
-    - ProfileEditor 
-      - ProfileEditor.js
-      - ProfileEditor.test.js
-    - TypographyInfo
-      - TypographyInfo.js
-      - TypographyInfo.test.js
   - config
     - apiConfig.js
 - .env - Environment variables
@@ -183,6 +175,11 @@ Connected to the SQLite database.
 ### Launch Frontend Application
 ```shell
 npm start
+  ```
+### Launch Backend Application
+```shell
+cd server
+node route.js
   ```
 #### This command compiles and starts the frontend application. If everything is set up correctly, you will see:
   ```shell
