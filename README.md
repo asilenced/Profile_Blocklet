@@ -152,26 +152,7 @@ After developing a blocklet, you may need to bundle it. Use `npm run bundle` com
 The code is licensed under the Apache 2.0 license found in the
 [LICENSE](LICENSE) file.
 
-# blocklet-profile
-### Setup Database
-Navigate to the server directory to create and initialize the SQLite database:
-```shell
-cd server
-node connect.js
-  ```
-#### If everything is set up correctly, you should see similar output in the console:
-```shell
-Connected to the SQLite database.
-  ```
-### Start Backend Server
-```shell
-node route.js
-  ```
-#### If everything is set up correctly, you should see similar output in the console:
-  ```shell
-Job Dispatch API running on port 3030!
-Connected to the SQLite database.
-  ```
+# Profile_Blocklet
 ### Launch Frontend Application
 ```shell
 npm start
