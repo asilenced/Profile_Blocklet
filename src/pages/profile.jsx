@@ -22,7 +22,6 @@ function ProfilePage() {
   const fetchUserProfile = async () => {
     try {
       const response = await axios.get(API_ENDPOINTS.FETCH_USERS);
-      console.log("front====>", response)
       setUser(response.data.data);
       setLoading(false);
     } catch (error) {

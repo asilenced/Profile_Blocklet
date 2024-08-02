@@ -7,11 +7,12 @@ const db = new Level(dbPath, {
 
 const userKey = 'user_1';
 const initialUserData = {
-  name: 'John Doe',
-  jobTitle: 'Software Developer',
-  email: 'XXXXX@gmail.com',
-  phone: '13012344321',
-  bio: 'Hello, Nice to meet you'
+  name: 'Michael Tan',
+  jobTitle: 'Senior Full Stack developer',
+  email: 'enjoyablecoder1758981@gmail.com',
+  phone: '+86 182 2222 4936',
+  bio: 'Passionate software engineer with 5+ years of experience in full-stack development.',
+  profilePicture: '',
 };
 
 db.get(userKey, (err, value) => {

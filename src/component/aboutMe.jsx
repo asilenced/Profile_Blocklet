@@ -2,8 +2,8 @@ import { Grid, Typography, Card, CardContent } from '@mui/material';
 
 function AboutMe({ user }) {
     return (
-        <Grid item xs={12} md={8}>
-            <Card>
+        <Grid item xs={12} md={12}>
+            <Card >
                 <CardContent>
                 <Typography variant="h6" gutterBottom>
                     Bio

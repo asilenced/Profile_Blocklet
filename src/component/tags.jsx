@@ -9,28 +9,22 @@ function Tags() {
         setValue(newValue); 
     };
     return (
-        <Grid item xs={12} md={8}>
+        <Grid item xs={12} md={12}>
           <Box mt={3}>
             <Tabs value={value} onChange={handleChange} variant="fullWidth">
-              <Tab label="Posts" />
-              <Tab label="Settings" />
-              <Tab label="Activity" />
+              <Tab label="Arc Block" />
+              <Tab label="Work History" />
             </Tabs>
             <Divider />
             <Box p={3}>
               {value === 0 && (
                 <Typography variant="body1">
-                  This is where posts content would be displayed.
+                  Arc Block is a Blockchain Dapp Template.
                 </Typography>
               )}
               {value === 1 && (
                 <Typography variant="body1">
-                  This is where settings content would be displayed.
-                </Typography>
-              )}
-              {value === 2 && (
-                <Typography variant="body1">
-                  This is where activity content would be displayed.
+                  Full Stack Developer
                 </Typography>
               )}
             </Box>
